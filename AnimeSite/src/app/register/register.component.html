@@ -1,0 +1,17 @@
+<div class="container">
+  <p class="maintitle">SIGNUP PAGE </p>
+<div class="card mt-5">
+
+  <div class="card-info">
+    <p class="title">Enter Your Details</p>
+    <form class="form" [formGroup]="signupForm" (ngSubmit)="sendSignUpData()">
+    <input placeholder="Your Name" class="input"  type="text" formControlName="name" required>
+    <input placeholder="Your email" class="input"  type="text" formControlName="email" required>
+    <input placeholder="Enter Password" class="input"  type="text" formControlName="password" required>
+    <button type="submit" class="btn" href="#">Sign Up</button>
+  </form>
+  <code routerLink="../login">Already a User LOGIN</code>
+
+  </div>
+</div>
+</div>

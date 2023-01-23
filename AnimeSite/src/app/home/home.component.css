@@ -1,0 +1,158 @@
+.container{
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+}
+
+
+.mainheading{
+  font-size: 4rem;
+  padding: 1rem;
+
+  /* color: rgb(4,0,71);
+  color: linear-gradient(90deg, rgba(4,0,71,0.8884803921568627) 0%, rgba(9,9,121,1) 31%, rgba(0,212,255,1) 100%);;
+  -webkit-background-clip: text;
+  background-clip: inherit; */
+  /* -webkit-text-fill-color: transparent; */
+}
+.eachAnime{
+  color: rgb(217, 217, 217);
+  background-color: hsl(0, 0%, 23%);
+  padding: 1rem;
+  margin: 1rem;
+  font-family: 'Raleway', sans-serif;
+  width: 19rem;
+  height: 33rem;
+  transition: 300ms ease-in;
+
+
+  /* z-index: 1; */
+}
+.eachAnime img{
+  width: 17rem;
+
+  height: 25rem;
+  z-index: 1;
+  position: relative;
+  /* padding: 8px; */
+}
+.eachAnime h3{
+  /* width: 80%; */
+  display: inline-block;
+  margin: 10px 0px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+/* .liine1{
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+} */
+.container h1{
+  color: white;
+  font-weight: 900;
+}
+
+.anheading{
+  display: inline-block;
+  font-size: 2.5rem;
+  /* margin-top: 1rem; */
+  padding: 1rem 0px 0px 0px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  line-height: 2rem;
+  letter-spacing: -2px;
+}
+
+.date{
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.eachAnime:hover .backpage{
+  transform: translateX(17rem);
+  width: 50rem;
+  height: 25rem;
+  visibility: visible;
+  /* top: -25rem; */
+
+  display: flex;
+}
+.eachAnime:hover {
+  /* transform: translateX(17rem); */
+  width: 67rem;
+  height: 27rem;
+  margin-bottom: 5rem;
+}
+.eachAnime:hover .par p {
+  height: 5rem;
+  width: 100%;
+}
+.eachAnime:hover .backpage .anheading{
+  font-size: 3rem;
+}
+.eachAnime:hover .line1{
+  display: none;
+}
+
+
+.backpage{
+  /* background-color: black; */
+  /* transition: 4s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
+  /* display: none; */
+  visibility: hidden;
+  flex-direction: column;
+  position: relative;
+  top: -25rem;
+  /* width: 17rem; */
+  /* height: 10rem; */
+  /* transform: translateY(-23rem); */
+  z-index: 0;
+  /* width: 16rem; */
+  transition: 400ms ease-out;
+
+}
+
+.rowx{
+margin-top: 1rem;
+padding: 0px 2rem;
+}
+.var{
+font-size: 12px;
+font-weight: lighter;
+margin-left: 10px;
+
+}
+
+.var2{
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.1rem;
+  margin-left: 8px;
+
+}
+
+.backpage .anheading{
+  font-size: 1px;
+line-height: 3rem;
+
+}
+
+.rowx:nth-child(2){
+  margin-top: 0;
+  color: red;
+}
+
+.par{
+  padding: 3rem;
+  font-size: 10px;
+  font-weight: lighter;
+  /* overflow-y:scroll; */
+}
+.par p{
+  overflow-y: scroll ;
+  height: 1rem;
+  width: 1rem;
+}

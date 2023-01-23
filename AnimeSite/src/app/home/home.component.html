@@ -1,0 +1,52 @@
+<div class="container">
+  <h1 class="mainheading">{{user.name}}, Welcome To our Site</h1>
+  <div class="allAnime">
+<div class="eachAnime" *ngFor="let p of arr">
+  <img width="500rem" [src]='p.image'>
+  <div class="line1">
+
+    <span class="anheading">{{p.animeName}}</span>
+    <span class="date">{{p.releaseData}}</span>
+  </div>
+
+
+
+    <div class="backpage">
+      <div class="rowx">
+
+        <span class="anheading col-10">{{p.animeName}}</span>
+        <button mat-icon-button class="example-icon col-2" id={{p.animeName}} aria-label="Example icon-button with share icon" (click)="addToUserFavorite(p)">
+          <mat-icon>favorite</mat-icon>
+        </button>
+      </div>
+      <div class="rowx">
+
+        <span class="date">{{p.releaseData}}</span>
+      </div>
+      <div class="rowx">
+
+        <span class="var">genre </span><span class="var2">{{p.genre}}</span>
+      </div>
+      <div class="rowx">
+
+        <span class="var">author </span><span class="var2">{{p.director}}</span>
+      </div>
+      <div class="rowx">
+
+        <span class="var">language </span><span class="var2">{{p.lang}}</span>
+      </div>
+      <div class="par">
+          <p>{{p.descp}}</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+</div>
+  </div>
+

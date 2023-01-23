@@ -1,0 +1,29 @@
+.eachAnime{
+  color: rgb(217, 217, 217);
+  background-color: hsl(0, 0%, 23%);
+  padding: 1rem;
+  margin: 1rem;
+  font-family: 'Raleway', sans-serif;
+  width: 17rem;
+}
+.eachAnime img{
+  width: 15rem;
+  height: auto;
+  /* padding: 8px; */
+}
+.eachAnime h3{
+  width: 80%;
+  display: inline-block;
+  margin: 10px 0px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.liine1{
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+}
+.container h1{
+  color: white;
+  font-weight: 900;
+}

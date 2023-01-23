@@ -1,0 +1,36 @@
+<div class="container">
+
+  <h1>Developer Page</h1>
+
+  <div class="upload">
+    <h2>Upload Anime Photo</h2>
+    <input type="file"  (change)="onFileChange($event)">
+    <input type="text" placeholder="AnimeName" [(ngModel)]="animeName">
+    <input type="text" placeholder="Language" [(ngModel)]="lang">
+    <input type="text" placeholder="Realease Date" [(ngModel)]="releaseData">
+    <input type="text" placeholder="Genre" [(ngModel)]="genre">
+    <input type="text" placeholder="Director" [(ngModel)]="director">
+    <input type="text" placeholder="Rating" [(ngModel)]="rating">
+    <input type="text" placeholder="Description" [(ngModel)]="descp">
+    <input type="button" (click)="onUpload()" value="Upload">
+  </div>
+
+<div class="tballdata">
+  <div class="row mt-5 thdata">
+    <div class="col-3 th">Email</div>
+    <div class="col-3 th">Name</div>
+    <div class="col-3 th">Animelist Item</div>
+  </div>
+  <div class="row mt-3 tbdata" *ngFor="let user of userList">
+    <div class="col-3 td">{{user.email}}</div>
+    <div class="col-3 td">{{user.name}}</div>
+    <div class="col-2 td">{{user.animeList.length}}</div>
+    <div class="col-4 td"><button (click)="deleteUser(user.email)">delete User</button></div>
+
+  </div>
+</div>
+
+
+<!-- <img width="500rem" [src]="retrievedImage"> -->
+
+</div>

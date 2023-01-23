@@ -1,0 +1,25 @@
+.flogo img{
+  width: 5rem;
+  margin: 1rem;
+
+}
+
+.footer{
+  margin-top: 10rem;
+  /* padding-top: 10rem; */
+  color: rgb(0, 0, 0);
+  text-align: center;
+  height: auto;
+  background: rgb(131,58,180);
+  position: relative;
+
+  bottom: 0;
+  width: 100%;
+background: linear-gradient(342deg, rgba(131,58,180,0.2) 0%, rgba(253,29,29,0.2) 50%, rgba(252,176,69,0.2) 100%);
+}
+.copyright{
+  padding: 10px;
+}
+.tandd{
+  padding: 10px;
+}
